@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="content">
+    <h3>best sellers</h3>
+    <div class="row">
+        @for (int i = 0; i < 8; i++)
+        {
+            <div class="item-preview col-sm-4 col-md-3">
+                <div>
+                    <a href="/viewitem">
+                        <img src="images/thumbnail.png" class="img-thumbnail" href="/ViewItem" />
+                        <div class="item-name-small">
+                            sample title
+                        </div>
+                    </a>
+                </div>
+                <div class="item-rating-small">
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-half.png" class="star-small" />
+                    <img src="images/star-empty.png" class="star-small" />
+                </div>
+                <div class="item-description-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac porttitor lorem, nec sodales tortor. In pharetra enim non felis ornare eleifend. Nullam elementum luctus enim, eu tristique odio rhoncus quis.</div>
+            </div>
+        }
+    </div>
+</div>
+
+
+@section Scripts {
+    @*<script type="text/javascript">alert('hello');</script>
+        SCRIPTS GO HERE
+    *@
+}

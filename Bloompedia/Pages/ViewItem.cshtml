@@ -1,0 +1,58 @@
+﻿@page
+@model Bloompedia.Pages.ViewItemModel
+@{
+    ViewData["Title"] = "ViewItem";
+}
+
+<div class="row">
+    <div id="primary" class="col-12 col-sm-8">
+        <!-- name, rating, description -->
+        <div id="item-main-info">
+            <img src="images/picture.png" class="img-thumbnail" id="item-photo" />
+            <h2>sample title</h2>
+            <div id="item-rating-large">
+                <img src="images/star-full.png" class="star-large" />
+                <img src="images/star-full.png" class="star-large" />
+                <img src="images/star-full.png" class="star-large" />
+                <img src="images/star-half.png" class="star-large" />
+                <img src="images/star-empty.png" class="star-large" />
+            </div>
+            <div id="item-description-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac porttitor lorem, nec sodales tortor. In pharetra enim non felis ornare eleifend. Nullam elementum luctus enim, eu tristique odio rhoncus quis.</div>
+        </div>
+
+        <!-- cost, location, color, type, etc -->
+        <div id="item-extra-info">
+            <div>cost</div>
+            <div>location</div>
+            <div>color</div>
+            <div>type</div>
+        </div>
+    </div>
+
+
+    <div id="secondary" class="col-4">
+        <h3>Also bought</h3>
+        <div>
+            <div>
+                <a href="/viewitem">
+                    <img src="images/thumbnail.png" class="img-thumbnail" id="suggestion-photo" href="/ViewItem" />
+                    <div class="item-name-small">
+                        sample title
+                    </div>
+                </a>
+            </div>
+            <div class="item-rating-small">
+                <img src="images/star-full.png" class="star-small" />
+                <img src="images/star-full.png" class="star-small" />
+                <img src="images/star-full.png" class="star-small" />
+                <img src="images/star-half.png" class="star-small" />
+                <img src="images/star-empty.png" class="star-small" />
+            </div>
+            <div class="item-description-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac porttitor lorem, nec sodales tortor. In pharetra enim non felis ornare eleifend. Nullam elementum luctus enim, eu tristique odio rhoncus quis.</div>
+        </div>
+
+
+        <h3>Other seller products</h3>
+    </div>
+
+</div>
