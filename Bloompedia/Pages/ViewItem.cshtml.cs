@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Bloompedia.Pages
 {
-    public class ViewItemModel : PageModel
+    public class ViewItemModel : BaseModel
     {
         public void OnGet()
         {

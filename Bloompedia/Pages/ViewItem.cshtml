@@ -31,28 +31,52 @@
 
 
     <div id="secondary" class="col-12 col-sm-5">
-        <h4>Also bought</h4>
-        <div id="suggested-item">
-            <div>
-                <a href="/viewitem">
-                    <img src="images/thumbnail.png" class="img-thumbnail" id="suggestion-photo" href="/ViewItem" />
-                    <div id="suggested-item-name">
-                        sample title
-                    </div>
-                </a>
+        <h4 class="mb-3">Also bought</h4>
+        @for (int i = 0; i < 2; i++)
+        {
+            <div id="suggested-item">
+                <div>
+                    <a href="/viewitem">
+                        <img src="images/thumbnail.png" class="img-thumbnail" id="suggestion-photo" href="/ViewItem" />
+                        <div id="suggested-item-name">
+                            sample title
+                        </div>
+                    </a>
+                </div>
+                <div class="item-rating-small">
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-half.png" class="star-small" />
+                    <img src="images/star-empty.png" class="star-small" />
+                </div>
+                <div id="suggested-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac porttitor lorem, nec sodales tortor. In pharetra enim non felis ornare eleifend. Nullam elementum luctus enim, eu tristique odio rhoncus quis.</div>
             </div>
-            <div class="item-rating-small">
-                <img src="images/star-full.png" class="star-small" />
-                <img src="images/star-full.png" class="star-small" />
-                <img src="images/star-full.png" class="star-small" />
-                <img src="images/star-half.png" class="star-small" />
-                <img src="images/star-empty.png" class="star-small" />
+        }
+
+        <h4 class="mt-4 mb-3">Other seller products</h4>
+        @for (int i = 0; i < 2; i++)
+        {
+            <div id="suggested-item">
+                <div>
+                    <a href="/viewitem">
+                        <img src="images/thumbnail.png" class="img-thumbnail" id="suggestion-photo" href="/ViewItem" />
+                        <div id="suggested-item-name">
+                            sample title
+                        </div>
+                    </a>
+                </div>
+                <div class="item-rating-small">
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-half.png" class="star-small" />
+                    <img src="images/star-empty.png" class="star-small" />
+                </div>
+                <div id="suggested-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac porttitor lorem, nec sodales tortor. In pharetra enim non felis ornare eleifend. Nullam elementum luctus enim, eu tristique odio rhoncus quis.</div>
             </div>
-            <div id="suggested-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac porttitor lorem, nec sodales tortor. In pharetra enim non felis ornare eleifend. Nullam elementum luctus enim, eu tristique odio rhoncus quis.</div>
-        </div>
+        }
 
-
-        <h4>Other seller products</h4>
     </div>
 
 </div>

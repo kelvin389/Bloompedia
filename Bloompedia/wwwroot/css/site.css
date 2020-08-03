@@ -2,6 +2,8 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 /* body */
+
+
 body {
     margin-top: 3em;
 }
@@ -21,6 +23,8 @@ body {
     width: 30px;
     border: 1px solid black;
     vertical-align: top;
+    background-image: url(/images/searchbutton.png);
+    background-size: 100%;
 }
 
 /* small */

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@model BaseModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -37,9 +40,12 @@
                 <a href="/">
                     <h1 id="title">bloompedia</h1>
                 </a>
-                <input type="text" id="search-bar" />
-                <input type="image" src="images/searchbutton.png" id="search-button" />
+                <form method="post">
+                    <input type="text" id="search-bar" asp-for="search"/>
+                    <input type="submit" id="search-button" value=""/>
+                </form>
             </div>
+            @ViewData["Test"];
             @RenderBody()
         </main>
     </div>
