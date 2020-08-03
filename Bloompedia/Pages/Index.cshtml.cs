@@ -19,7 +19,7 @@ namespace Bloompedia.Pages
 
         public void OnGet()
         {
-
+            
         }
     }
 }
