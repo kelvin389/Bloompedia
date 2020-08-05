@@ -15,7 +15,11 @@ namespace Bloompedia.Pages
 
         public IActionResult OnPost()
         {
-            return RedirectToPage("/Results", new { search });
+            if(!String.IsNullOrEmpty(search))
+            {
+                return RedirectToPage("/Results", new { search });
+            }
+            return Page();
         }
     }
 }
