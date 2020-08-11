@@ -7,14 +7,14 @@
 <div id="content">
     <h3>best sellers</h3>
     <div class="row">
-        @for (int i = 0; i < 8; i++)
+        @for (int i = 0; i < Model.allPlantsList.Count(); i++)
         {
             <div class="item-preview col-sm-4 col-md-3">
                 <div>
-                    <a href="/viewitem">
-                        <img src="images/thumbnail.png" class="img-thumbnail" href="/ViewItem" />
+                    <a asp-page="ViewItem" asp-route-id="@Model.allPlantsList[i].PlantID">
+                        <img src="images/thumbnail.png" class="img-thumbnail"/>
                         <div class="item-name-small">
-                            sample title
+                            @Model.allPlantsList[i].PlantID
                         </div>
                     </a>
                 </div>
@@ -25,7 +25,7 @@
                     <img src="images/star-half.png" class="star-small" />
                     <img src="images/star-empty.png" class="star-small" />
                 </div>
-                <div class="item-description-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac porttitor lorem, nec sodales tortor. In pharetra enim non felis ornare eleifend. Nullam elementum luctus enim, eu tristique odio rhoncus quis.</div>
+                <div class="item-description-small">Description here. This plant's color is @Model.allPlantsList[i].Colour. It is type @Model.allPlantsList[i].Type and is size @Model.allPlantsList[i].Size </div>
             </div>
         }
     </div>

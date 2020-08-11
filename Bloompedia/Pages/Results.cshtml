@@ -12,5 +12,26 @@
 
     <div id="search-results" class="col-12 col-sm-10">
         <h4>Results</h4>
+        @foreach (var plant in Model.searchedPlantsList)
+        {
+            <div class="item-preview col-sm-4 col-md-3">
+                <div>
+                    <a asp-page="ViewItem" asp-route-id=@plant.PlantID>
+                        <img src="images/thumbnail.png" class="img-thumbnail" href="/ViewItem" />
+                        <div class="item-name-small">
+                            @plant.PlantID
+                        </div>
+                    </a>
+                </div>
+                <div class="item-rating-small">
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-full.png" class="star-small" />
+                    <img src="images/star-half.png" class="star-small" />
+                    <img src="images/star-empty.png" class="star-small" />
+                </div>
+                <div class="item-description-small">This plant is @plant.Colour. It is type @plant.Type and @plant.Size size.</div>
+            </div>
+        }
     </div>
 </div>

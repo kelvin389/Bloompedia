@@ -9,7 +9,7 @@
         <!-- name, rating, description -->
         <div id="item-main-info">
             <img src="images/picture.png" class="img-thumbnail" id="item-photo" />
-            <h2>sample title</h2>
+            <h2>@Model.selectedPlant.PlantID</h2>
             <div id="item-rating-large">
                 <img src="images/star-full.png" class="star-large" />
                 <img src="images/star-full.png" class="star-large" />
@@ -17,15 +17,15 @@
                 <img src="images/star-half.png" class="star-large" />
                 <img src="images/star-empty.png" class="star-large" />
             </div>
-            <div id="item-description-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac porttitor lorem, nec sodales tortor. In pharetra enim non felis ornare eleifend. Nullam elementum luctus enim, eu tristique odio rhoncus quis.</div>
+            <div id="item-description-large">This is the full descripton for this plant. The color is @Model.selectedPlant.Colour, the size is @Model.selectedPlant.Size, and the type is @Model.selectedPlant.Type.</div>
         </div>
 
         <!-- cost, location, color, type, etc -->
         <div id="item-extra-info">
             <div>cost</div>
             <div>location</div>
-            <div>color</div>
-            <div>type</div>
+            <div>color: @Model.selectedPlant.Colour</div>
+            <div>type: @Model.selectedPlant.Type</div>
         </div>
     </div>
 
