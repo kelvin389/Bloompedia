@@ -43,6 +43,7 @@ namespace Bloompedia.Pages
             }
             else
             {
+                // TEMPORARY
                 selectedPlant = new Plant();
             }
 
