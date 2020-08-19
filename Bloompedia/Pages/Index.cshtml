@@ -12,7 +12,7 @@
             <div class="item-preview col-sm-4 col-md-3">
                 <div>
                     <a asp-page="ViewItem" asp-route-id="@Model.allPlantsList[i].PlantID">
-                        <img src="images/thumbnail.png" class="img-thumbnail"/>
+                        <img src="@Bloompedia.utils.Utilites.GetImagePath(Model.allPlantsList[i].ImageID, "jpg")" class="img-thumbnail"/>
                         <div class="item-name-small">
                             @Model.allPlantsList[i].PlantID
                         </div>

@@ -20,6 +20,7 @@
     <Folder Include="Pages\Plants\" />
     <Folder Include="Pages\DatabaseImages\" />
     <Folder Include="wwwroot\images\uploaded\" />
+    <Folder Include="utils\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Pages\DatabaseImages\Create.cshtml" />

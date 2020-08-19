@@ -17,7 +17,7 @@ namespace Bloompedia.Pages
         public IActionResult OnPost()
         {
             // if string contains anything
-            if(!String.IsNullOrEmpty(search))
+            if (!String.IsNullOrEmpty(search))
             {
                 // redirect to the search results page
                 return RedirectToPage("/Results", new { search });

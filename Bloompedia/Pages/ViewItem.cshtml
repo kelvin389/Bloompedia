@@ -8,7 +8,7 @@
     <div id="primary" class="col-12 col-sm-7">
         <!-- name, rating, description -->
         <div id="item-main-info">
-            <img src="images/picture.png" class="img-thumbnail" id="item-photo" />
+            <img src="@Bloompedia.utils.Utilites.GetImagePath(Model.selectedPlant.ImageID, "jpg")" class="img-thumbnail" id="item-photo" />
             <h2>@Model.selectedPlant.PlantID</h2>
             <div id="item-rating-large">
                 <img src="images/star-full.png" class="star-large" />

@@ -17,7 +17,7 @@
             <div class="item-preview col-sm-4 col-md-3">
                 <div>
                     <a asp-page="ViewItem" asp-route-id=@plant.PlantID>
-                        <img src="images/thumbnail.png" class="img-thumbnail" href="/ViewItem" />
+                        <img src="@Bloompedia.utils.Utilites.GetImagePath(plant.ImageID, "jpg")" class="img-thumbnail" />
                         <div class="item-name-small">
                             @plant.PlantID
                         </div>
